@@ -62,7 +62,21 @@
 }
 
 .foodBox {
-    padding: 10px 5px;
+    padding: 10px 10px;
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0.1px rgb(235, 235, 235);
+    border-radius: 8px;
+    position: relative;
+    transition: 0.2s all ease;
+    cursor: pointer;
+
+}
+
+.foodBox:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 20px 0.1px rgb(121, 121, 121);
 }
 
 .foodBox img {
@@ -93,6 +107,7 @@
     align-items: center;
     width: 17%;
     margin: auto;
+    margin-top: 20px;
     position: relative;
     transition: 0.2s all ease;
     box-shadow: 0px 0px 15px 3px rgb(84, 81, 81);
