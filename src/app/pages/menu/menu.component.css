@@ -37,6 +37,7 @@
 .buybtn {
     color: white;
     background-color: black;
+    text-decoration: none;
     padding: 10px 10px;
     font-size: 18px;
     border-radius: 5px;
@@ -44,5 +45,10 @@
     position: absolute;
     bottom: 30px;
     left: 33%;
+    transition: 0.1s all ease;
     
+}
+
+.buybtn:hover{
+    box-shadow: 0px 0px 15px 5px rgb(155, 151, 151);
 }

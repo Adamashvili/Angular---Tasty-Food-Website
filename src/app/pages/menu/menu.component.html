@@ -6,7 +6,7 @@
                 <h1>{{fd.foodName}}</h1>
                 <p>{{fd.foodDetails}}</p>
                 <p>{{fd.foodPrice | currency:'USD'}}</p>
-                <button class="buybtn">Buy Now &nbsp;  <i class="bi bi-bag"></i> </button>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;  <i class="bi bi-bag"></i> </a>
             </div>
         </div>
     </div>
