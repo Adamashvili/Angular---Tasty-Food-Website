@@ -10,6 +10,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { FooterComponent } from './sharePages/footer/footer.component';
 import { NavbarComponent } from './sharePages/navbar/navbar.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenupageComponent } from './pages/menupage/menupage.component';
     MenuComponent,
     FooterComponent,
     NavbarComponent,
-    MenupageComponent
+    MenupageComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

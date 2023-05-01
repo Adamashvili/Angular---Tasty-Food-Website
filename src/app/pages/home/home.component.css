@@ -1,6 +1,6 @@
 .banner {
     background-image: url("../../../assets/bannerimg.jpg");
-    height: 600px;
+    height: 900px;
     background-position: center top;
     background-size: cover;
 }
@@ -9,13 +9,12 @@
     color: bisque;
     font-size: 50px;
     font-weight: bold;
-   
-    
-   
     letter-spacing: 3px;
+    transition: 0.4s all ease;
 }
 .content h1:hover {
     color: rgb(214, 174, 125);
+    margin-top: 20px;
     
     
 }
@@ -31,7 +30,8 @@
 
 .content a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: black;
+    font-weight: bold;
     background-color: #fff;
     padding: 15px 20px;
     border-radius: 5px;
@@ -105,7 +105,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17%;
+    width: 20%;
     margin: auto;
     margin-top: 20px;
     position: relative;
@@ -128,4 +128,18 @@
 .viewmorebtn:hover i {
     right: 20px;
     color: var(--primary-color);
+}
+
+@media screen and (max-width:680px) {
+    .banner {
+        height: 700px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .viewmorebtn {
+        width: 40%;
+    }
 }

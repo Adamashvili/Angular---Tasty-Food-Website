@@ -1,8 +1,11 @@
-.navbar-light, .navbar-nav, .nav-link {
-    color: var(--secondary-color);
+
+
+#navb {
+    height: 70px;
+    background: rgb(0, 0, 0);
+    
 }
 
-.navbar-light, .navbar-nav, .nav-link.active-link {
-    color: var(--primary-color);
-
+.nav-item a {
+    color: white;
 }

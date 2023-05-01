@@ -21,3 +21,10 @@ img {
     left: 100px;
     top: 20px;
 }
+
+@media screen and (max-width:680px) {
+    form {
+        width: 100%;
+    }
+
+}
