@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { MenuComponent } from './pages/menu/menu.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { LoginComponent } from './login/login.component';
+import { CanDeactivateService } from './candeactivate.service.guard';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
-  {path:'menu', component:MenuComponent},
-  {path: 'menu/:id', component:MenupageComponent},
-  {path: 'about', component:AboutComponent},
-  {path: 'contact', component:ContactComponent },
+  {path:'', canDeactivate: [CanDeactivateService], component:LoginComponent},
+  {path:'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)},
+  {path:'menu', loadChildren: () => import('./pages/menu/menu.module').then(m => m.MenuModule)},
+  {path: 'menu/:id', loadChildren: () => import('./pages/menupage/menupage.module').then(m => m.MenuPageModule)},
+  {path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
+  {path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
   {path: '**', component:PagenotfoundComponent }
 ];
 

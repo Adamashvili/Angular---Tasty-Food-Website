@@ -11,24 +11,33 @@ import { FooterComponent } from './sharePages/footer/footer.component';
 import { NavbarComponent } from './sharePages/navbar/navbar.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CanDeactivateService } from './candeactivate.service.guard';
+import { HomeModule } from './pages/home/home.module';
+import { AboutModule } from './pages/about/about.module';
+import { ContactModule } from './pages/contact/contact.module';
+import { MenuModule } from './pages/menu/menu.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ContactComponent,
-    HomeComponent,
-    MenuComponent,
     FooterComponent,
     NavbarComponent,
+    PagenotfoundComponent,
+    LoginComponent,
+    MenuComponent,
     MenupageComponent,
-    PagenotfoundComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
-  providers: [],
+  providers: [CanDeactivateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

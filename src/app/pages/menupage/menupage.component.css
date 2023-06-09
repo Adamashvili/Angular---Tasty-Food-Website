@@ -1,11 +1,16 @@
 form {
     width: 50%;
     margin-top: 10%;
+    background-color: #000000;
     
 }
 
 input, textarea {
     margin-top: 20px;
+}
+
+h1, p {
+    color: white;
 }
 
 img {

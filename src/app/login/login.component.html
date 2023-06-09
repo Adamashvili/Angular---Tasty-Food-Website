@@ -1,0 +1,26 @@
+<div class="loginPage">
+<div class="container">
+    <div class="box">
+        <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit(user.value, pass.value)">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" formControlName="user" #user>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" formControlName="pass" #pass>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Sign up</a>
+            </div>
+            <h6 class="error">{{msg}}</h6>
+            <input type="submit" value="Login">
+    
+        </form>
+    </div>
+</div>
+</div>

@@ -1,11 +1,24 @@
 
 
 #navb {
-    height: 70px;
+    height: 100px;
     background: rgb(0, 0, 0);
     
 }
 
 .nav-item a {
     color: white;
+}
+
+.navbar {
+    z-index: 1;
+}
+.collapse.navbar-collapse {
+    color: white;
+}
+
+#bars {
+    background-color: rgb(110, 108, 108);
+    border: 1px solid white;
+    
 }
