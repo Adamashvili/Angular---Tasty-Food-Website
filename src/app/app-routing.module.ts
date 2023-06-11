@@ -4,6 +4,8 @@ import { MenupageComponent } from './pages/menupage/menupage.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { LoginComponent } from './login/login.component';
 import { CanDeactivateService } from './candeactivate.service.guard';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+
 
 const routes: Routes = [
   {path:'', canDeactivate: [CanDeactivateService], component:LoginComponent},
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path: 'menu/:id', loadChildren: () => import('./pages/menupage/menupage.module').then(m => m.MenuPageModule)},
   {path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
   {path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
-  {path: '**', component:PagenotfoundComponent }
+  {path: 'wishlist', component:WishlistComponent },
+  {path: '**', component:PagenotfoundComponent },
+
 ];
 
 @NgModule({

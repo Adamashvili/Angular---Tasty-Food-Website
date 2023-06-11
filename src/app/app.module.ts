@@ -18,6 +18,10 @@ import { HomeModule } from './pages/home/home.module';
 import { AboutModule } from './pages/about/about.module';
 import { ContactModule } from './pages/contact/contact.module';
 import { MenuModule } from './pages/menu/menu.module';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { InterceptorService } from './interceptor.service';
+
 
 @NgModule({
   declarations: [
@@ -28,16 +32,26 @@ import { MenuModule } from './pages/menu/menu.module';
     LoginComponent,
     MenuComponent,
     MenupageComponent,
-    HomeComponent
+    HomeComponent,
+    WishlistComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule
 
   ],
-  providers: [CanDeactivateService],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true
+    },
+    CanDeactivateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
