@@ -1,24 +1,19 @@
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent {
+      background-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 5px 15px 5px rgb(125, 123, 123, 0.75);
+      border-radius: 20px;
+    }
+  }
 
-
-#navb {
-    height: 100px;
-    background: rgb(0, 0, 0);
+  #cart {
+    position: relative;
     
-}
+  }
 
-.nav-item a {
-    color: white;
-}
-
-.navbar {
-    z-index: 1;
-}
-.collapse.navbar-collapse {
-    color: white;
-}
-
-#bars {
-    background-color: rgb(110, 108, 108);
-    border: 1px solid white;
-    
-}
+  .badge {
+    position: absolute;
+    left: 18px;
+    top: 25px;
+    font-size: 11px;
+  }

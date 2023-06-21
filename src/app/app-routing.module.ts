@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
   {path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
   {path: 'wishlist', component:WishlistComponent },
+  {path: 'cart', loadChildren: () => import('./pages/cart/cart.module').then(m => m.CartModule)},
   {path: '**', component:PagenotfoundComponent },
 
 ];

@@ -3,6 +3,7 @@
     height: 900px;
     background-position: center top;
     background-size: cover;
+    overflow: hidden;
 }
 
 .content h1 {
@@ -25,7 +26,8 @@
     left: 25%;
     cursor: pointer;
     transition: 0.2s all ease;
-    position: absolute;
+    position: relative;
+   
 
 }
 

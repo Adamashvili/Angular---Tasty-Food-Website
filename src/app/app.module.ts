@@ -21,6 +21,7 @@ import { MenuModule } from './pages/menu/menu.module';
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { InterceptorService } from './interceptor.service';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { InterceptorService } from './interceptor.service';
     MenupageComponent,
     HomeComponent,
     WishlistComponent,
+    CartComponent,
   
   ],
   imports: [
