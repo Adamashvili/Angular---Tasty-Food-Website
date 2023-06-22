@@ -67,6 +67,7 @@
 
 }
 .buybtn, .addbtn {
+    position: relative;
     color: white;
     background-color: black;
     text-decoration: none;
@@ -74,8 +75,8 @@
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    bottom: 30px;
-    left: 33%;
+    bottom: -20px;
+    left: 0;
     transition: 0.1s all ease; 
     
 }

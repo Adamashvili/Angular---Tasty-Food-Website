@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class OrderDetailsService {
+  public productList: any
 
   constructor() { }
 
@@ -13,44 +14,46 @@ export class OrderDetailsService {
     {
       id:1,
       foodName:"Paneer Grilled Sandwich",
-      foodDetails:"Pan-fried masala paneer.",
+      foodDetail:"Pan-fried masala paneer.",
       foodPrice:7,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
     },
     {
       id:2,
       foodName:"Veggie Supreme",
-      foodDetails:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
+      foodDetail:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
       foodPrice:12,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k"
     },
     {
       id:3,
       foodName:"Paneer Burger",
-      foodDetails:"panner",
+      foodDetail:"panner",
       foodPrice:15,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k"
     },
     {
       id:4,
       foodName:"Veg Masala Roll In Naan",
-      foodDetails:"A homely mix of mashed potato and veggies, seasoned with Indian spices. A filling sure to take you back to mom's kitchen.",
+      foodDetail:"A homely mix of mashed potato and veggies, seasoned with Indian spices.",
       foodPrice:10,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/l2ng6gtge30sqaafqng7"
     },
     {
       id:5,
       foodName:"Indulgence Brownie",
-      foodDetails:"(Eggless) Indulge in richly decadent chocolate brownie crafted with love & topped with bitter-sweet chocolate that provides ultra-rich chocolate experience.",
+      foodDetail:"(Eggless) Indulge in richly decadent chocolate brownie crafted with love & topped with bitter-sweet chocolate.",
       foodPrice:11,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iqlmbg1hlyc0dspdyzzv"
     },
     {
       id:6,
       foodName:"Oreo Cheesecake Ice Cream",
-      foodDetails:"Oreo ice cream",
+      foodDetail:"Oreo ice cream",
       foodPrice:5,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
     }
   ]
+
+  
 }

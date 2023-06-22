@@ -4,11 +4,11 @@
             <div class="foodBox mt-3 mb-3">
                 <img src="{{fd.foodImg}}" alt="food">
                 <h1>{{fd.foodName}}</h1>
-                <p>{{fd.foodDetails}}</p>
-                <p>{{fd.foodPrice }}</p>
+                <p>{{fd.foodDetail}}</p>
+                <p>{{fd.foodPrice | currency}}</p>
                 <div class="links">
                 <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;  <i class="bi bi-bag"></i> </a>
-                <a class="addbtn" [routerLink]="['/menu',fd.id]">Add to Cart&nbsp;  <i class="bi bi-bag"></i> </a>
+                <button (click)="addtoCart(fd)" class="addbtn border-0">Add to Cart&nbsp;  </button>
             </div>
             </div>
         </div>
