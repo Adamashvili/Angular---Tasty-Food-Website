@@ -23,6 +23,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { InterceptorService } from './interceptor.service';
 import { CartComponent } from './pages/cart/cart.component';
 import { SearchComponent } from './search/search.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SearchComponent } from './search/search.component';
     WishlistComponent,
     CartComponent,
     SearchComponent,
+    FilterComponent,
   
   ],
   imports: [

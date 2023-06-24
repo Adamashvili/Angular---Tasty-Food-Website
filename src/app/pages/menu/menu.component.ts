@@ -38,4 +38,18 @@ export class MenuComponent  implements OnInit{
 
   }
 
+  getToTalFoods() {
+    return this.service.foodDetails.length;
+  }
+
+  getToTalSaleFoods() {
+    return this.service.foodDetails.filter(type => type.foodType === 'On Sale').length;
+  }
+
+  getToTalOutofOrderFoods() {
+    return this.service.foodDetails.filter(type => type.foodType === 'Out Of Order').length;
+  }
+
+
+
 }
