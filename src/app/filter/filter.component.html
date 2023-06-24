@@ -2,17 +2,20 @@
     <div class="filter m-3 pe-3">
         <span>Filter:</span>
         <div class="inputs">
-        <input type="radio" name="filter" value="All">
+        <input type="radio" name="filter" value="All" [(ngModel)]="selectedRadioButtonValue"
+        (change)="onRadioSelectChanged()">
         <span>{{'All Foods('+all+')'}}</span>
     </div>
 
     <div class="inputs">
-        <input type="radio" name="filter" value="All">
+        <input type="radio" name="filter" value="Sale" [(ngModel)]="selectedRadioButtonValue"
+        (change)="onRadioSelectChanged()">
         <span>{{'On Sale('+sale+')'}}</span>
     </div>
 
     <div class="inputs">
-        <input type="radio" name="filter" value="All">
+        <input type="radio" name="filter" value="NotAvailable" [(ngModel)]="selectedRadioButtonValue"
+        (change)="onRadioSelectChanged()">
         <span>{{'Out of Order('+outOfOrder+')'}}</span>
     </div>
         

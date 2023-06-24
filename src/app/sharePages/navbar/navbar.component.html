@@ -6,8 +6,8 @@
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse pt-4 text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto  mb-lg-0 justify-content-center fs-6 flex-grow-1 pe-3">
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav    justify-content-center fs-6 flex-grow-1 ">
           <li class="nav-item">
             <a class="nav-link mx-2 " routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
           </li>
@@ -25,7 +25,7 @@
           </li> 
         </ul>
 
-        <div class="d-flex justify-content-center align-items-center gap-3">
+        <div class="d-flex justify-content-center align-items-center ">
           <button routerLink="cart" routerLinkActive="active-link" id="cart" class="btn btn-primary bg-transparent border-0"><i class="bi bi-bag text-light fs-2 pe-4"></i> 
           <div class="badge bg-danger">{{totalItem}}</div></button>
           <button (click)="logOut()" style="background-color: #f94ca4;" class="text-light px-3 py-2 pe-3 rounded-4">Log Out</button>

@@ -40,14 +40,24 @@ export class MenuComponent  implements OnInit{
 
   getToTalFoods() {
     return this.service.foodDetails.length;
+    
   }
 
   getToTalSaleFoods() {
-    return this.service.foodDetails.filter(type => type.foodType === 'On Sale').length;
+    return this.service.foodDetails.filter(type => type.foodType === 'Sale').length;
+   
   }
 
-  getToTalOutofOrderFoods() {
-    return this.service.foodDetails.filter(type => type.foodType === 'Out Of Order').length;
+  getToTaloutofOrderFoods() {
+    return this.service.foodDetails.filter(type => type.foodType === 'NotAvailable').length;
+  }
+
+  foodCountRadio: string = "All";
+
+  onFilterRadioChanged(data: string) {
+    this.foodCountRadio = data;
+    console.log(this.foodCountRadio)
+
   }
 
 

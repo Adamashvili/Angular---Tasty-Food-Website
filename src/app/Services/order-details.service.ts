@@ -17,7 +17,7 @@ export class OrderDetailsService {
       foodDetail:"Pan-fried masala paneer.",
       foodPrice:12,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:2,
@@ -25,7 +25,7 @@ export class OrderDetailsService {
       foodDetail:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
       foodPrice:17,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k",
-      foodType: 'Out Of Order'
+      foodType: 'NotAvailable'
     },
     {
       id:3,
@@ -33,7 +33,7 @@ export class OrderDetailsService {
       foodDetail:"panner",
       foodPrice:15,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:4,
@@ -41,7 +41,7 @@ export class OrderDetailsService {
       foodDetail:"A homely mix of mashed potato and veggies, seasoned with Indian spices.",
       foodPrice:3,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/l2ng6gtge30sqaafqng7",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:5,
@@ -49,7 +49,7 @@ export class OrderDetailsService {
       foodDetail:"(Eggless) Indulge in richly decadent chocolate brownie crafted with love & topped with bitter-sweet chocolate.",
       foodPrice:23,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iqlmbg1hlyc0dspdyzzv",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:6,
@@ -57,7 +57,7 @@ export class OrderDetailsService {
       foodDetail:"Oreo ice cream",
       foodPrice:30,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6",
-      foodType: 'On Sale'
+      foodType: 'NotAvailable'
     },
     {
       id:7,
@@ -65,7 +65,7 @@ export class OrderDetailsService {
       foodDetail:"Pan-fried masala paneer.",
       foodPrice:4,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq",
-      foodType: 'Out Of Order'
+      foodType: 'Sale'
     },
     {
       id:8,
@@ -73,7 +73,7 @@ export class OrderDetailsService {
       foodDetail:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
       foodPrice:12,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:9,
@@ -81,7 +81,7 @@ export class OrderDetailsService {
       foodDetail:"panner",
       foodPrice:15,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:10,
@@ -89,7 +89,7 @@ export class OrderDetailsService {
       foodDetail:"A homely mix of mashed potato and veggies, seasoned with Indian spices.",
       foodPrice:10,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/l2ng6gtge30sqaafqng7",
-      foodType: 'On Sale'
+      foodType: 'Sale'
     },
     {
       id:11,
@@ -97,7 +97,7 @@ export class OrderDetailsService {
       foodDetail:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
       foodPrice:12,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k",
-      foodType: 'Out Of Order'
+      foodType: 'NotAvailable'
     },
     {
       id:12,
@@ -105,7 +105,7 @@ export class OrderDetailsService {
       foodDetail:"Tasty panner",
       foodPrice:15,
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k",
-      foodType: 'On Sale'
+      foodType: 'NotAvailable'
     },
     
     

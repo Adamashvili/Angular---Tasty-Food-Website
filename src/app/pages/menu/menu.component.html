@@ -1,15 +1,17 @@
-<div class="container mt-5 mb-5">
+<div class="container">
     <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
     <app-filter
      [all]="getToTalFoods()"
      [sale]="getToTalSaleFoods()"
-     [outOfOrder]="getToTalOutofOrderFoods()"></app-filter>
+     [outOfOrder]="getToTaloutofOrderFoods()"
+     (filterRadioChanged)="onFilterRadioChanged($event)"></app-filter>
     <div class="row">
         <ng-container *ngFor="let fd of foodData" >
-        <div class="col-lg-4 col-sm-12 col-md-6" *ngIf="searchText === '' || fd.foodName.toLowerCase().includes(searchText)" >
+        <ng-container  *ngIf="foodCountRadio === 'All' || foodCountRadio == fd.foodType">
+        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" *ngIf="searchText === '' || fd.foodName.toLowerCase().includes(searchText)" >
             <div class="foodBox mt-3 mb-3">
                 <img src="{{fd.foodImg}}" alt="food">
-                <p class="type" [ngStyle]="{color: fd.foodType === 'On Sale' ? 'green' : 'red'}">{{fd.foodType}}</p>
+                <p class="type" [ngStyle]="{color: fd.foodType === 'Sale' ? 'green' : 'red'}">{{fd.foodType}}</p>
                 <h1>{{fd.foodName}}</h1>
                 <p>{{fd.foodDetail}}</p>
                 <p>{{fd.foodPrice | currency}}</p>
@@ -20,5 +22,6 @@
             </div>
         </div>
     </ng-container>
+</ng-container>
     </div>
 </div>
