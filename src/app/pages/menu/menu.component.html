@@ -1,6 +1,8 @@
 <div class="container mt-5 mb-5">
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
     <div class="row">
-        <div class="col-lg-4 col-sm-7 col-md-1" *ngFor="let fd of foodData">
+        <ng-container *ngFor="let fd of foodData" >
+        <div class="col-lg-4 col-sm-12 col-md-6" *ngIf="searchText === '' || fd.foodName.toLowerCase().includes(searchText)" >
             <div class="foodBox mt-3 mb-3">
                 <img src="{{fd.foodImg}}" alt="food">
                 <h1>{{fd.foodName}}</h1>
@@ -12,5 +14,6 @@
             </div>
             </div>
         </div>
+    </ng-container>
     </div>
 </div>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MenupageComponent } from './pages/menupage/menupage.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { LoginComponent } from './login/login.component';
 import { CanDeactivateService } from './candeactivate.service.guard';

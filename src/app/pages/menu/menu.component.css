@@ -1,6 +1,7 @@
+
 .foodBox {
     
-    width: 350px;
+    width: 360px;
     height: 500px;
     display: flex;
     flex-direction: column;

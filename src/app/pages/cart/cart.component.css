@@ -53,3 +53,14 @@ h4, h6 {
         top: -220px;
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .tohide {
+        display: none;
+    }
+
+    .buttons {
+        position: relative;
+        left: 30%;
+    }
+}

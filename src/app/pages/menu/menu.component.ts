@@ -29,4 +29,13 @@ export class MenuComponent  implements OnInit{
     console.log(item)
   }
 
+  searchText: string = "";
+
+  onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
+    // console.log(this.searchText)
+    
+
+  }
+
 }
