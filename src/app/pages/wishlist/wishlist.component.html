@@ -2,6 +2,7 @@
     <div class="content-area">
       <div class="header">
         <h1>Manage Your Wishlist</h1>
+        <h6 class="text-info">GET, POST, PUT, DELETE Methods</h6>
         <hr>
       </div>
       <div class="container">
@@ -31,14 +32,14 @@
               <th>Name</th>
               <th>Description</th>
               <th>Price</th>
-              <th></th>
-              <th></th>
+              <th class="text-center" colspan="2">Actions</th>
+              
             </tr>
             <tr *ngIf="allProducts.length < 1">
-              <td colspan="5">Please add your Products.</td>
+              <td class="text-center" colspan="6">Please add your Products.</td>
             </tr>
             <tr *ngIf="loading.isRefreshing | async">
-              <td colspan="5">Please wait and then refresh...</td>
+              <td class="text-center" colspan="6">Please wait and then refresh...</td>
             </tr>
             <tr *ngFor="let prod of allProducts; index as i">
               <td>{{i + 1}}</td>

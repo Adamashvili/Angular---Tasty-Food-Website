@@ -18,7 +18,7 @@
 }
 .content-area:hover {
     box-shadow: 0px 0px 45px 4px white;
-    background-color:#2d86c1 ;
+   
     
 }
 .header{
@@ -87,6 +87,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    color: black;
   }
   
   input[type=submit] {
@@ -151,7 +152,12 @@ input[type=text], select {
     color: white;
     width: 100%;
     cursor: pointer;
+    transition: 0.2s all;
+    border-radius: 10px;
     
+  }
+  .btn-delete:hover {
+    box-shadow: 0px 0px 15px 4px #FB5027;
   }
 
   .btn-edit{
@@ -159,16 +165,32 @@ input[type=text], select {
     color: white;
     width: 100%;
     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s all;
     
+  }
+  .btn-edit:hover {
+    box-shadow: 0px 0px 15px 4px #4276e6;
   }
 
   .btn-fetch{
     background-color: #3498DB;
     color: white;
+    transition: 0.2s all;
+    border-radius: 10px;
   }
+  .btn-fetch:hover {
+    box-shadow: 0px 0px 15px 4px #4276e6;
+  }
+  
 
   .btn-clear{
     background-color: #F5B041;
     color: white;
+    transition: 0.2s all;
+    border-radius: 10px;
+  }
+  .btn-clear:hover {
+    box-shadow: 0px 0px 15px 4px #F5B041;
   }
   
